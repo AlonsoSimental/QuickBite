@@ -1,7 +1,7 @@
 import restaurant from '../content/restaurant.json'
 import CTAButton from '../components/CTAButton'
 import Section from '../components/Section'
-import Badge from '../components/Badge'
+import Card from '../components/Card'
 import MenuCategory from '../components/MenuCategory'
 import Seo from '../seo/Seo'
 import { useI18n } from '../i18n/I18nProvider'
@@ -9,16 +9,17 @@ import { useI18n } from '../i18n/I18nProvider'
 export default function HomePage() {
   const { t, lang } = useI18n()
   const aboutLines = restaurant.about[lang]?.length ? restaurant.about[lang] : restaurant.about.de
+  const highlights = restaurant.highlights.slice(0, 3).map((text) => text.replace(' laut Kundenmustern', '').replace('als wahrgenommene ', ''))
   return (
     <>
       <Seo title="QuickBite | Fast Casual Burgers in Brugg" description="QuickBite in Brugg: burgers, delivery, takeaway, and dine-in with late-night opening hours." />
       <section className="relative">
         <img src={restaurant.images.hero} alt="QuickBite burger hero" className="h-[55vh] w-full object-cover md:h-[65vh]" />
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/65 to-black/45" />
         <div className="absolute inset-0 flex items-center">
-          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h1 className="max-w-xl text-3xl font-bold md:text-5xl">QuickBite</h1>
-            <p className="mt-3 max-w-xl text-sm text-white/90 md:text-base">Fast-Casual-Burger in Brugg. Abend- und Nachtservice mit Lieferung und Take-away.</p>
+          <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+            <h1 className="max-w-lg text-3xl font-bold md:text-5xl">QuickBite</h1>
+            <p className="mt-3 max-w-lg text-sm text-white/90 md:text-base">Fast-Casual-Burger in Brugg. Abend- und Nachtservice mit Lieferung und Take-away.</p>
             <div className="mt-5 flex flex-wrap gap-3">
               <CTAButton href={restaurant.externalLinks.uberEats}>{t('delivery')}</CTAButton>
               <CTAButton href={`tel:${restaurant.contact.phone}`} variant="secondary">{t('call')}</CTAButton>
@@ -28,9 +29,11 @@ export default function HomePage() {
       </section>
 
       <Section title={t('highlights')}>
-        <div className="flex flex-wrap gap-2">
-          {restaurant.highlights.map((item) => (
-            <Badge key={item}>{item}</Badge>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          {highlights.map((item) => (
+            <Card key={item}>
+              <p className="text-sm text-brand-muted">{item}</p>
+            </Card>
           ))}
         </div>
       </Section>

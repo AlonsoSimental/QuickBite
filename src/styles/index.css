@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0f0f10;
+  --color-text: #f8f8f8;
+  --color-accent: #f97316;
+  --color-muted: #a3a3a3;
+  --color-surface: #1c1c1f;
+}
+
+body {
+  @apply bg-brand-bg text-brand-text antialiased;
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+  @apply outline-none ring-2 ring-offset-2 ring-orange-400 ring-offset-black;
+}

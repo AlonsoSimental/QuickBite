@@ -1,0 +1,130 @@
+{
+  "identity": {
+    "name": "QuickBite",
+    "businessType": "Fast Casual Restaurant",
+    "specialty": "Hamburgers, including smash burgers",
+    "primaryLanguage": "de"
+  },
+  "languages": {
+    "idiomaPrincipal": "de",
+    "disponibles": [
+      "de",
+      "en"
+    ]
+  },
+  "contact": {
+    "phone": "0768165598",
+    "address": {
+      "street": "Vorstadt 15",
+      "city": "Brugg",
+      "region": "Aargau",
+      "postalCode": "5200",
+      "country": "Switzerland"
+    },
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=QuickBite&query_place_id=ChIJq2gbl4hrkEcRF7y3A23UNHU"
+  },
+  "externalLinks": {
+    "uberEats": "https://www.ubereats.com/ch-de/store/quickbite/x8SkN_P1WW2LfPbHe8i-lA?ps=1",
+    "restaurantGuru": "https://de.restaurantguru.com/QuickBite-Brugg"
+  },
+  "hours": [
+    {
+      "day": "Montag",
+      "hours": "18:30–03:00"
+    },
+    {
+      "day": "Dienstag",
+      "hours": "18:30–03:00"
+    },
+    {
+      "day": "Mittwoch",
+      "hours": "Geschlossen"
+    },
+    {
+      "day": "Donnerstag",
+      "hours": "18:30–03:00"
+    },
+    {
+      "day": "Freitag",
+      "hours": "18:30–03:00"
+    },
+    {
+      "day": "Samstag",
+      "hours": "18:30–03:00"
+    },
+    {
+      "day": "Sonntag",
+      "hours": "18:30–03:00"
+    }
+  ],
+  "serviceOptions": [
+    "Kontaktlose Lieferung",
+    "Lieferung",
+    "Take-away",
+    "Vor Ort essen"
+  ],
+  "offers": [
+    "Snacks",
+    "Kaffee"
+  ],
+  "payments": [
+    "NFC",
+    "Kreditkarte",
+    "Debitkarte"
+  ],
+  "atmosphere": "Informell",
+  "rating": {
+    "score": 4.8,
+    "reviews": 25
+  },
+  "highlights": [
+    "Smash Burger als wahrgenommene Spezialität",
+    "Schneller und freundlicher Service laut Kundenmustern",
+    "Lieferung, Take-away und Vor-Ort-Optionen"
+  ],
+  "about": {
+    "de": [
+      "QuickBite ist ein Fast-Casual-Restaurant in Brugg mit Fokus auf Burger.",
+      "Der Betrieb ist besonders abends und nachts verfügbar.",
+      "Der Schwerpunkt liegt auf schneller Bestellung und flexiblen Serviceoptionen."
+    ],
+    "en": []
+  },
+  "menu": {
+    "status": "placeholder_from_photos",
+    "note": "No structured menu or confirmed prices available.",
+    "items": [
+      {
+        "name": "Burger (Foto 1)",
+        "description": "Auswahl basierend auf Foto 1.",
+        "image": "/images/dishes/dish1.png"
+      },
+      {
+        "name": "Burger (Foto 2)",
+        "description": "Auswahl basierend auf Foto 2.",
+        "image": "/images/dishes/dish2.png"
+      },
+      {
+        "name": "Burger (Foto 3)",
+        "description": "Auswahl basierend auf Foto 3.",
+        "image": "/images/dishes/dish3.png"
+      }
+    ]
+  },
+  "images": {
+    "logo": "/images/logo/logo_provisional.jpeg",
+    "hero": "/images/dishes/dish1.png",
+    "dishes": [
+      "/images/dishes/dish1.png",
+      "/images/dishes/dish2.png",
+      "/images/dishes/dish3.png"
+    ],
+    "venue": [
+      "/images/venue/exterior.png"
+    ]
+  },
+  "cta": {
+    "primary": "delivery",
+    "secondary": "call"
+  }
+}

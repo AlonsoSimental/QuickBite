@@ -6,7 +6,7 @@ export default function Footer() {
   const { t } = useI18n()
   return (
     <footer className="mt-12 border-t border-white/10 py-8">
-      <Container className="grid grid-cols-1 gap-6 text-sm text-brand-muted md:grid-cols-3">
+      <Container className="grid grid-cols-1 gap-6 text-sm text-brand-muted md:grid-cols-2 lg:grid-cols-3">
         <div>
           <h3 className="mb-2 font-semibold text-white">QuickBite</h3>
           <p>{restaurant.contact.address.street}</p>
@@ -16,8 +16,8 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="mb-2 font-semibold text-white">{t('footerHours')}</h3>
-          <p>{restaurant.hours[0].day}: {restaurant.hours[0].hours}</p>
-          <p>{restaurant.hours[2].day}: {restaurant.hours[2].hours}</p>
+          <p>Mo, Di, Do-So: 18:30-03:00</p>
+          <p>Mi: Geschlossen</p>
         </div>
         <div>
           <h3 className="mb-2 font-semibold text-white">{t('footerLinks')}</h3>

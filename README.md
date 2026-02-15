@@ -107,3 +107,12 @@ Suggested logic:
 - Provider and fallback logic are in `src/i18n/I18nProvider.jsx`.
 - Missing UI keys fallback to German.
 - Restaurant-specific long copy can remain in German when translation is not available.
+
+## Post-development refinements
+- Added a real mobile navbar flow with hamburger trigger + accessible drawer (overlay close, close button, `Escape`, `aria-expanded`, `aria-controls`, first-item focus).
+- Reduced desktop navbar saturation by keeping one clear primary CTA and styling other actions as secondary buttons.
+- Improved hero readability with a stronger gradient overlay and tighter text width/spacing.
+- Reworked Highlights from long pills to compact cards for cleaner visual hierarchy.
+- Refined `Auswahl` cards with a neutral image frame and a short non-invented note for menu limitations.
+- Updated footer responsive columns (`1/2/3`) and compact opening-hours summary.
+- Language selector now keeps additional languages visible but clearly marked as pending (`(Bald)`), avoiding a half-finished UX.
